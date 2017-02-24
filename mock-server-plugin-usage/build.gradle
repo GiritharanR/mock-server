@@ -1,0 +1,27 @@
+apply plugin: 'mockserver'
+apply plugin: 'java'
+
+buildscript {
+    repositories {
+    	mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'org.mockserver:mock-server-plugin:0.6.0'
+    }
+}
+
+mockserver {
+
+	port = 1000
+}
+
+dependencies {
+
+    testCompile 'junit:junit:4.12'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}

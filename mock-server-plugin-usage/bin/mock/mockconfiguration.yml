@@ -1,0 +1,56 @@
+---
+- path: "/testpath"
+  method: GET
+  responseHeaders:
+    responsehaeder1:
+    - headervalue1
+    - headervalue2
+    responsehaeder2:
+    - headervalue1
+    - headervalue2
+  responseStatusCode: 200
+  response: request value
+  responseResource: sample.xml
+- path: "/queryaddres"
+  method: POST
+  requestHeaders:
+    SOAPAction:
+    - http://www.qas.com/web-2007-09/DoSearch
+  responseHeaders:
+    Content-Type:
+    - text/xml
+    - charset=utf-8
+  responseStatusCode: 200
+  responseResource: "/response/doSearchAddress.xml"
+- path: "/queryaddres"
+  method: POST
+  requestHeaders:
+    SOAPAction:
+    - http://www.qas.com/web-2007-09/DoGetAddress
+  responseHeaders:
+    Content-Type:
+    - text/xml
+    - charset=utf-8
+  responseStatusCode: 200
+  responseResource: "/response/doGetAddress.xml"
+- path: "/testpath2"
+  method: GET
+  requestHeaders:
+    haeder21:
+    - headervalue1
+    - headervalue2
+    haeder22:
+    - headervalue1
+    - headervalue2
+  request: request value 2
+  requestResource: 2sample.xml
+  responseHeaders:
+    responsehaeder21:
+    - headervalue1
+    - headervalue2
+    responsehaeder22:
+    - headervalue1
+    - headervalue2
+  responseStatusCode: 201
+  response: request value2
+  responseResource: 2sample.xml

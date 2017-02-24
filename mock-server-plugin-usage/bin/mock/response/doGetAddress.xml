@@ -1,0 +1,44 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <qas:Address xmlns:qas="http://www.qas.com/web-2007-09">
+            <qas:QAAddress>
+                <qas:AddressLine LineContent="Address">
+                    <qas:Label/>
+                    <qas:Line>Tetra Pak</qas:Line>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="Address">
+                    <qas:Label>Building name</qas:Label>
+                    <qas:Line>Orbis</qas:Line>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="Address">
+                    <qas:Label>Building number</qas:Label>
+                    <qas:Line>1</qas:Line>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="Address">
+                    <qas:Label/>
+                    <qas:Line>Lovett Road</qas:Line>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="Address">
+                    <qas:Label/>
+                    <qas:Line>STAINES-UPON-THAMES</qas:Line>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="Address">
+                    <qas:Label/>
+                    <qas:Line>Middlesex</qas:Line>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="Address">
+                    <qas:Label>Postcode</qas:Label>
+                    <qas:Line>TW18 3AR</qas:Line>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="DataPlus">
+                    <qas:Label>Electricity Meter Number</qas:Label>
+                    <qas:Line/>
+                </qas:AddressLine>
+                <qas:AddressLine LineContent="DataPlus">
+                    <qas:Label>Gas Meter Number</qas:Label>
+                    <qas:Line/>
+                </qas:AddressLine>
+            </qas:QAAddress>
+        </qas:Address>
+    </soap:Body>
+</soap:Envelope>

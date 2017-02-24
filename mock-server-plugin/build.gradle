@@ -1,0 +1,38 @@
+group = 'org.mockserver'
+version = '0.6.0'
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile gradleApi()
+    compile('org.projectlombok:lombok:1.16.6')
+    compile('com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.8.6')
+    compile('com.fasterxml.jackson.core:jackson-databind:2.8.6')
+    compile('org.mock-server:mockserver-netty:3.10.4')
+
+    testCompile 'junit:junit:4.12'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+}
+
+publishing {
+	publications {
+	    mavenJava(MavenPublication) {
+		from components.java
+		artifact sourceJar {
+		    classifier "sources"
+		}
+	    }
+	}
+}

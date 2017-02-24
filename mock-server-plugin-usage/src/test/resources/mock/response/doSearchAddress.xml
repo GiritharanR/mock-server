@@ -1,0 +1,18 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <qas:QASearchResult VerifyLevel="None" xmlns:qas="http://www.qas.com/web-2007-09">
+            <qas:QAPicklist>
+                <qas:FullPicklistMoniker>0cSGBREgnfBwEBVFcxODNIRSwgKgAqAwAA</qas:FullPicklistMoniker>
+                <qas:PicklistEntry FullAddress="true">
+                    <qas:Moniker>0COGBREgnfBwEDAQAAAADha74AAAAAAABkAA--</qas:Moniker>
+                    <qas:PartialAddress>1 Meadow Gardens, STAINES-UPON-THAMES, Middlesex TW18 3HE</qas:PartialAddress>
+                    <qas:Picklist>1 Meadow Gardens, STAINES-UPON-THAMES, Middlesex</qas:Picklist>
+                    <qas:Postcode>TW18 3HE</qas:Postcode>
+                    <qas:Score>100</qas:Score>
+                </qas:PicklistEntry>
+                <qas:Prompt>Enter selection</qas:Prompt>
+                <qas:Total>1</qas:Total>
+            </qas:QAPicklist>
+        </qas:QASearchResult>
+    </soap:Body>
+</soap:Envelope>
